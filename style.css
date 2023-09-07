@@ -6,3 +6,20 @@
     --grey-tri-blue: #667688; /*used by tri*/
     --red-brown: #5C2B27; /*buttons text*/
 }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/*
+.bg_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./art/sebastiano-piazzi-unspalsh-stairs.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}*/
