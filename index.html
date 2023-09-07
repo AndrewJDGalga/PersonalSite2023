@@ -9,7 +9,11 @@
 </head>
     <body>
         <div class="bg_image"></div>
-        <header class="fixed">
+        <header class="sticky site_head">
+            <div class="logo">
+                <h1>Andrew Jonhardt</h1>
+                <p>Front-end web deverloper</p>
+            </div>
             <nav class="top_nav">
                 <ol>
                     <li>
@@ -22,9 +26,9 @@
             </nav>
         </header>
         <div class="fixed triback"></div>
-        <main class="width_constrained">
+        <main class="width_constrained content">
             <article id="welcome">
-                <h1>Welcome to my site!</h1>
+                <h2>Welcome to my site!</h2>
                 <p>
                     I'm a full time front-end web developer and part time game designer currently located in Austin, Texas. 
                 </p>
@@ -35,7 +39,7 @@
             <article id="projects">
                 <section class="project">
                     <img class="project-photo" src="./art/atxgd.webp" alt="header of the atx game designers site">
-                    <h2>ATX Game Designers</h2>
+                    <h3>ATX Game Designers</h3>
                     <p>
                         Website completed for the Austin, Texas based board game design group ATX Game Designers for the final Practicum portion of my Austin Community College Web Development coursework. ATX Game Designers asked me to make a static site in Wordpress on a server they control. I had almost no experience with PHP or Wordpress at that point. I created a Classic-style theme and added site content directly in Wordpress.
                     </p>
@@ -59,7 +63,7 @@
                 </section>
                 <section class="project">
                     <img class="project-photo" src="./art/css-final.webp" alt="header for a fake Austin Godot Engine deverlopers fan group.">
-                    <h2>Fictional Austin Godot Engine group site</h2>
+                    <h3>Fictional Austin Godot Engine group site</h3>
                     <p>
                         As part of my CSS coursework, I created a website for a fictional fake Austin Godot Engine deverlopers fan group. The site includes home, about, membership enrollment, and contact pages.
                     </p>
@@ -74,7 +78,7 @@
                 </section>
                 <section class="project">
                     <img class="project-photo" src="./art/jquery-mars.webp" alt="header for a one page site on Mars.">
-                    <h2>jQuery Mars page</h2>
+                    <h3>jQuery Mars page</h3>
                     <p>
                         An Austin Community College 1 page project on Mars intended to reflect an understanding of jQuery.
                     </p>
@@ -97,7 +101,7 @@
                 </div>
             </article>
         </main>
-        <footer class="fixed">
+        <footer class="sticky site_footer">
             <a href="#welcome">Welcome</a>
         </footer>
     </body>
