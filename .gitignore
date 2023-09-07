@@ -3,3 +3,5 @@
 
 !*.html
 !.gitignore
+!*.js
+!*.css
