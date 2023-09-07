@@ -13,6 +13,19 @@ html, body {
     height: 100%;
 }
 
+.fixed {
+    position: fixed;
+}
+
+.top_nav ol {
+    list-style: none;
+    display: flex;
+}
+
+.top_nav a {
+    text-decoration: none;
+}
+
 /*
 .bg_image {
     position: absolute;
