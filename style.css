@@ -2,6 +2,7 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
+    --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
     --red-brown: #5C2B27; /*buttons text*/
@@ -38,11 +39,33 @@ html, body {
 .top_nav ol {
     list-style: none;
     display: flex;
-    gap: 80%;
+    gap: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_nav ol:first-child {
+    padding-left: 0;
 }
 
 .top_nav a {
     text-decoration: none;
+}
+
+.navigation_button {
+    color: var(--red-brown);
+    background-color: var(--light-green);
+    padding: 6px;
+}
+
+.shadow_left {
+    box-shadow: -6px 6px 6px var(--dark-green);
+}
+.shadow_right {
+    box-shadow: 6px 6px 6px var(--dark-green);
+}
+.shadow_down {
+    box-shadow: 0 6px 6px var(--dark-green);
 }
 
 .width_constrained {
@@ -64,6 +87,12 @@ html, body {
 
 .site_footer {
     bottom: 0;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.site_footer a {
+    text-decoration: none;
 }
 
 /*
