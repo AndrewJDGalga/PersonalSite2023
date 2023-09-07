@@ -26,6 +26,23 @@ html, body {
     text-decoration: none;
 }
 
+.width_constrained {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-photo {
+    width: 90%;
+    height: auto;
+    border: 4px solid var(--dark-green);
+}
+
 /*
 .bg_image {
     position: absolute;
