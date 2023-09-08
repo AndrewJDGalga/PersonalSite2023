@@ -2,7 +2,7 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
-    --grey-green-opacity: rgba(255,255,255,0.4);
+    --grey-opacity: rgba(255,255,255,0.4);
     --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
@@ -84,6 +84,7 @@ body {
     font-family: "Inkfree", Arial, Helvetica, sans-serif;
     box-shadow: inset 0 2px 1px var(--highlight-blue), inset 0 -2px 1px var(--highlight-blue);
     padding: 4px;
+    /*margin-top: 4px;*/
 }
 
 .top_nav {
@@ -134,7 +135,20 @@ body {
 }
 
 .content {
-    background-color: var(--grey-green-opacity);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: var(--grey-opacity);
+}
+
+#welcome {
+    text-align: center;
+    margin-bottom: 3em;
+}
+#welcome h2 {
+    margin-bottom: 2em;
+}
+#welcome p {
+    margin-bottom: 1em;
 }
 
 .project {
