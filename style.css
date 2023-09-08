@@ -2,6 +2,7 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
+    --grey-green-opacity: rgba(157,201,166,0.4);
     --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
@@ -41,8 +42,8 @@ html {
     height: 100%;
     background-image: url('./art/sebastiano-piazzi-unspalsh-stairs.webp');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-position: top;
+    background-size: 100% 100%;
     z-index: -4;
     filter: blur(2px);
 }
@@ -98,6 +99,14 @@ html {
     margin: 0 auto;
 }
 
+.blue_backing {
+    background-color: var(--grey-tri-blue);
+}
+
+.content {
+    background-color: var(--grey-green-opacity);
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -114,6 +123,7 @@ html {
     bottom: 0;
     text-align: center;
     padding-bottom: 12px;
+    padding-top: 6px;
 }
 
 .site_footer a {
