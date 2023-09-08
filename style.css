@@ -2,10 +2,11 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
-    --grey-green-opacity: rgba(164,171,161,0.4);
+    --grey-green-opacity: rgba(255,255,255,0.4);
     --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
+    --highlight-blue: #314D6E;
     --red-brown: #5C2B27; /*buttons text*/
 }
 
@@ -69,7 +70,7 @@ body {
     background-position: top;
     background-size: 100% 100%;
     z-index: -4;
-    filter: blur(4px);
+    filter: blur(5px);
 }
 
 .site_head {
@@ -81,6 +82,8 @@ body {
     text-align: center;
     color: var(--logo-pink);
     font-family: "Inkfree", Arial, Helvetica, sans-serif;
+    box-shadow: inset 0 2px 1px var(--highlight-blue), inset 0 -2px 1px var(--highlight-blue);
+    padding: 4px;
 }
 
 .top_nav {
