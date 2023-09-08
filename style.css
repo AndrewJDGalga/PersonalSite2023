@@ -2,11 +2,31 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
-    --grey-green-opacity: rgba(157,201,166,0.4);
+    --grey-green-opacity: rgba(164,171,161,0.4);
     --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
     --red-brown: #5C2B27; /*buttons text*/
+}
+
+@font-face {
+    font-family: "DejavuSans";
+    src: 
+        local("DejavuSans"),
+        url('./font/dejavu-sans/DejaVuSans.ttf') format("truetype"),
+        url('./font/dejavu-sans/DejaVuSansCondensed.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Inkfree";
+    src:
+        local("Inkfree"),
+        url('./font/Inkfree.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Cambria";
+    src:
+        local("Cambria"),
+        url('./font/Cambria.ttf') format("truetype");
 }
 
 *,
@@ -19,6 +39,10 @@
 
 html {
     height: 100%;
+}
+
+body {
+    font-family: "DejavuSans", Arial, Helvetica, sans-serif;
 }
 
 .sticky {
@@ -45,7 +69,7 @@ html {
     background-position: top;
     background-size: 100% 100%;
     z-index: -4;
-    filter: blur(2px);
+    filter: blur(4px);
 }
 
 .site_head {
@@ -55,6 +79,8 @@ html {
 
 .logo {
     text-align: center;
+    color: var(--logo-pink);
+    font-family: "Inkfree", Arial, Helvetica, sans-serif;
 }
 
 .top_nav {
@@ -82,6 +108,7 @@ html {
     color: var(--red-brown);
     background-color: var(--light-green);
     padding: 6px;
+    font-family: "Cambria", Arial, Helvetica, sans-serif;
 }
 
 .shadow_left {
