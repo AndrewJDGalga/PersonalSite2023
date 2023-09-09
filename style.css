@@ -176,6 +176,13 @@ body {
 }
 .project_links a {
     text-decoration: none;
+    color: var(--dark-green);
+    background-color: var(--grey-opacity);
+    padding: 3px;
+}
+.project_links a:hover {
+    color: var(--grey-opacity);
+    background-color: var(--dark-green);
 }
 
 .project-photo {
