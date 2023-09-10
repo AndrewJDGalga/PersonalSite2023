@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(Pending)</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> -->
     <script src="script.js" defer></script>
 </head>
     <body>
@@ -14,7 +15,7 @@
             <nav class="top_nav">
                 <ol class="width_constrained blue_backing">
                     <li>
-                        <a class="navigation_button shadow_left" href="#projects">Projects</a>
+                        <a id="top_left" class="navigation_button shadow_left" href="#projects">Projects</a>
                     </li>
                     <li>
                         <div class="logo center_text">
@@ -23,14 +24,14 @@
                         </div>
                     </li>
                     <li>
-                        <a class="navigation_button shadow_right" href="#contact">Contact</a>
+                        <a id="top_right" class="navigation_button shadow_right" href="#contact">Contact</a>
                     </li>
                 </ol>
             </nav>
         </header>
         <main class="content">
             <div class="width_constrained">
-                <div id="welcome"></div>
+                <div id="welcome" data-name="Welcome" data-pointer="#welcome"></div>
                 <article class="welcome center_text">
                     <h2>Welcome to my site!</h2>
                     <p>
@@ -40,7 +41,7 @@
                         Check out my projects or let me know how I can help with yours!
                     </p>
                 </article>
-                <div id="projects"></div>
+                <div id="projects" data-name="Projects" data-pointer="#projects"></div>
                 <article class="projects">
                     <section class="project">
                         <h2>Projects</h2>
@@ -98,9 +99,9 @@
                         </ul>
                     </section>
                 </article>
-                <div id="contact"></div>
+                <div id="contact" data-name="Contact" data-pointer="#contact"></div>
                 <article class="contact center_text">
-                    <h2>Reach out!</h2>
+                    <h2>Reach out</h2>
                     <p>I'm looking for projects.</p>
                     <div class="contact-email">
                         <!--TODO: email link-->
@@ -108,9 +109,9 @@
                     </div>
                 </article>
             </div>
-        </main>
+        </main>   
         <footer class="sticky site_footer blue_backing center_text">
-            <a class="navigation_button shadow_down embedded_link" href="#welcome">Welcome</a>
+            <a id="bottom" class="navigation_button shadow_down embedded_link" href="#welcome">Welcome</a>
         </footer>
     </body>
     <!--Site creatred by Andrew Jonhardt and not for redistribution. Background image by Sebastiano Piazzi via Unsplash (https://unsplash.com/photos/1ITnDvrDfbI)-->
