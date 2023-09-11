@@ -25,3 +25,14 @@ $(window).scroll(function() {
         setNav(navTopRight, anchorWelcome);
     }
 });
+
+let mobile_active = false;
+$('#mobile_menu').click(function() {
+    if(!mobile_active) {
+        $('#mobile_menu').css({'clip-path':'polygon(100% 0, 0 0, 50% 100%)', 'background-color':'var(--dark-green)'});
+        mobile_active = true;
+    } else {
+        $('#mobile_menu').css({'clip-path':'polygon(0 0, 0 100%, 100% 50%)', 'background-color':'var(--light-green)'});
+        mobile_active = false;
+    }
+});
