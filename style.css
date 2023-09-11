@@ -8,7 +8,7 @@
     --grey-tri-blue: #667688; /*used by tri*/
     --highlight-blue: #314D6E;
     --red-brown: #5C2B27; /*buttons text*/
-    --link-bg: #DB675C;
+    --link-bg: #A84F47;
 }
 
 @font-face {
@@ -212,6 +212,7 @@ body {
     color: var(--grey-green);
     background-color: var(--red-brown-black);
 }
+
 .contact_link {
     color: var(--logo-pink);
     background-color: rgba(0,0,0,0);
@@ -220,6 +221,14 @@ body {
         2px -2px 0 var(--highlight-blue),
         -2px 2px 0 var(--highlight-blue),
         2px 2px 0 var(--highlight-blue);
+}
+.contact_link:hover {
+    color: var(--highlight-blue);
+    text-shadow: 
+        -2px -2px 0 var(--logo-pink),
+        2px -2px 0 var(--logo-pink),
+        -2px 2px 0 var(--logo-pink),
+        2px 2px 0 var(--logo-pink);
 }
 
 .project-photo {
