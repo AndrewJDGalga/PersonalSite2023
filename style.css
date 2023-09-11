@@ -44,6 +44,7 @@ html {
 
 body {
     font-family: "DejavuSans", Arial, Helvetica, sans-serif;
+    height: fit-content;
 }
 
 .sticky {
@@ -87,6 +88,7 @@ body {
     font-family: "Inkfree", Arial, Helvetica, sans-serif;
     box-shadow: inset 0 2px 1px var(--highlight-blue), inset 0 -2px 1px var(--highlight-blue);
     padding: 4px;
+    text-align: center;
 }
 
 .top_nav {
@@ -117,7 +119,8 @@ body {
     font-family: "Cambria", Arial, Helvetica, sans-serif;
 }
 .navigation_button:hover {
-    
+    color: var(--light-green);
+    background-color: var(--red-brown);
 }
 
 .shadow_left {
@@ -139,9 +142,12 @@ body {
     background-color: var(--grey-tri-blue);
 }
 
+.grey_back {
+    background-color: var(--grey-opacity);
+}
+
 .content {
     padding-bottom: 3em;
-    background-color: var(--grey-opacity);
 }
 
 .welcome h2 {
@@ -183,6 +189,7 @@ body {
     color: var(--dark-green);
     background-color: var(--grey-opacity);
     padding: 3px;
+    line-height: 1.8em;
 }
 .embedded_link:hover {
     color: var(--grey-green);
@@ -225,5 +232,21 @@ body {
 
 .site_footer a {
     text-decoration: none;
+    visibility: visible;
 }
 
+@media screen and (max-width: 740px), screen and (orientation: portrait)
+ {
+    .top_nav li:nth-child(1) {
+        display: none;
+    }
+    .top_nav li:nth-child(3) {
+        display: none;
+    }
+    .top_nav ol {
+        justify-content: left;
+    }
+    .site_footer a {
+        visibility: hidden;
+    }
+}
