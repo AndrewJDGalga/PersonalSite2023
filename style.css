@@ -8,6 +8,7 @@
     --grey-tri-blue: #667688; /*used by tri*/
     --highlight-blue: #314D6E;
     --red-brown: #5C2B27; /*buttons text*/
+    --link-bg: #DB675C;
 }
 
 @font-face {
@@ -122,6 +123,9 @@ body {
     color: var(--light-green);
     background-color: var(--red-brown);
 }
+.navigation_button-current {
+    /*fixing links*/
+}
 
 .shadow_left {
     box-shadow: -6px 1px 6px var(--dark-green);
@@ -185,17 +189,29 @@ body {
 }
 
 .embedded_link {
+    position: relative;
     text-decoration: none;
-    color: var(--dark-green);
-    background-color: var(--grey-opacity);
+    color: black;
+    font-style: italic;
     padding: 3px;
     line-height: 1.8em;
+}
+.embedded_link::before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--link-bg);
+    z-index: -1;
+    border-radius: 100%;
 }
 .embedded_link:hover {
     color: var(--grey-green);
     background-color: var(--red-brown-black);
 }
-.special_link {
+.contact_link {
     color: var(--logo-pink);
     background-color: rgba(0,0,0,0);
     text-shadow: 
