@@ -30,9 +30,11 @@ let mobile_active = false;
 $('#mobile_menu-button').click(function() {
     if(!mobile_active) {
         $('#mobile_menu-button').css({'clip-path':'polygon(100% 0, 0 0, 50% 100%)', 'background-color':'var(--dark-green)'});
+        $('#mobile_menu-menu').css({'display':'flex'});
         mobile_active = true;
     } else {
         $('#mobile_menu-button').css({'clip-path':'polygon(0 0, 0 100%, 100% 50%)', 'background-color':'var(--light-green)'});
+        $('#mobile_menu-menu').css({'display':'none'});
         mobile_active = false;
     }
 });

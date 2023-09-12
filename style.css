@@ -274,7 +274,7 @@ body {
 }
 
 .mobile_menu {
-    display: flex;
+    display: none;
     position: relative;
 }
 .mobile_menu ul {
@@ -289,10 +289,15 @@ body {
     padding: 16px;
     margin-left: 0;
 }
-
+#mobile_menu-menu {
+    display: none;
+}
 
 @media screen and (max-width: 740px), screen and (orientation: portrait)
  {
+    .mobile_menu {
+        display: flex;
+    }
     .top_nav ol>li:nth-child(1) {
         display: none;
     }
