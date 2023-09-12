@@ -47,6 +47,13 @@ body {
     font-family: "DejavuSans", Arial, Helvetica, sans-serif;
     height: fit-content;
 }
+.width_constrained {
+    width: 90%;
+    margin: 0 auto;
+
+    min-width: 320px;
+    max-width: 2400px;
+}
 
 .sticky {
     position: sticky;
@@ -141,11 +148,6 @@ body {
     box-shadow: 0 6px 6px var(--dark-green);
 }
 
-.width_constrained {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .blue_backing {
     background-color: var(--grey-tri-blue);
 }
@@ -218,6 +220,8 @@ body {
 }
 
 .contact_link {
+    text-decoration: none;
+    font-size: 3em;
     color: var(--logo-pink);
     background-color: rgba(0,0,0,0);
     text-shadow: 
@@ -247,11 +251,6 @@ body {
 
 .contact p {
     margin-bottom: 2em;
-}
-
-.contact a {
-    text-decoration: none;
-    font-size: 3em;
 }
 
 .site_footer {
@@ -316,5 +315,8 @@ body {
     }
     .site_footer a {
         visibility: hidden;
+    }
+    .contact_link {
+        font-size: 2em;
     }
 }
