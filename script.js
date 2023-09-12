@@ -4,13 +4,20 @@ const navBottom = document.getElementById('bottom');
 const anchorWelcome = document.getElementById('welcome');
 const anchorProjects = document.getElementById('projects');
 const anchorContact = document.getElementById('contact');
+let mobile_active = false;
 
 const setNav = (targetNav, dataSource) => {
     targetNav.innerText = dataSource.dataset.name;
     targetNav.href = dataSource.dataset.pointer;
 };
 
-$(window).scroll(function() {
+const closeMobileMenu = () => {
+    $('#mobile_menu-button').css({'clip-path':'polygon(0 0, 0 100%, 100% 50%)', 'background-color':'var(--light-green)'});
+    $('#mobile_menu-menu').css({'display':'none'});
+    mobile_active = false;
+}
+
+$(window).scroll( () => {
     if(($(window).scrollTop() + $(window).height()) > ($(document).height() - $('#contact').height() * 2)){
         setNav(navBottom, anchorContact);
         setNav(navTopLeft, anchorWelcome);
@@ -26,15 +33,19 @@ $(window).scroll(function() {
     }
 });
 
-let mobile_active = false;
-$('#mobile_menu-button').click(function() {
+$('#mobile_menu-button').click( ()=> {
     if(!mobile_active) {
         $('#mobile_menu-button').css({'clip-path':'polygon(100% 0, 0 0, 50% 100%)', 'background-color':'var(--dark-green)'});
         $('#mobile_menu-menu').css({'display':'flex'});
         mobile_active = true;
     } else {
-        $('#mobile_menu-button').css({'clip-path':'polygon(0 0, 0 100%, 100% 50%)', 'background-color':'var(--light-green)'});
-        $('#mobile_menu-menu').css({'display':'none'});
-        mobile_active = false;
+        closeMobileMenu();
+    }
+});
+
+$('#mobile_menu-menu').click( (e)=> {
+    const target = e.target.closest('a');
+    if(target) {
+        closeMobileMenu();
     }
 });
