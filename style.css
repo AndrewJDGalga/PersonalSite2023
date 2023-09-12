@@ -95,6 +95,7 @@ body {
 .top_nav {
     width: 100%;
     margin-top: 0;
+    z-index: -2;
 }
 
 .top_nav ol {
@@ -149,6 +150,7 @@ body {
 
 .grey_back {
     background-color: var(--grey-opacity);
+    z-index: 5;
 }
 
 .content {
@@ -210,7 +212,7 @@ body {
 }
 .embedded_link:hover {
     color: var(--grey-green);
-    background-color: var(--red-brown-black);
+    background-color: var(--red-brown);
 }
 
 .contact_link {
@@ -261,27 +263,40 @@ body {
     visibility: visible;
 }
 
-#mobile_menu {
+#mobile_menu-button {
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     background-color: var(--light-green);
     width: 4em;
     height: 4em;
 }
-#mobile_menu:hover {
+#mobile_menu-button:hover {
     background-color: var(--red-brown);
 }
-/*
-#mobile_menu:active {
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
+
+.mobile_menu {
+    display: flex;
+    position: relative;
+}
+.mobile_menu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    top: 3.5em;
+    left: -50%;
+    gap: 1em;
     background-color: var(--dark-green);
-}*/
+    padding: 16px;
+    margin-left: 0;
+}
+
 
 @media screen and (max-width: 740px), screen and (orientation: portrait)
  {
-    .top_nav li:nth-child(1) {
+    .top_nav ol>li:nth-child(1) {
         display: none;
     }
-    .top_nav li:nth-child(3) {
+    .top_nav ol>li:nth-child(3) {
         display: none;
     }
     .top_nav ol {
