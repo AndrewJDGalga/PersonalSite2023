@@ -6,9 +6,14 @@ const anchorProjects = document.getElementById('projects');
 const anchorContact = document.getElementById('contact');
 let mobile_active = false;
 
-const setNav = (targetNav, dataSource) => {
+const setCurNavDesktop = (targetNav, dataSource) => {
     targetNav.innerText = dataSource.dataset.name;
     targetNav.href = dataSource.dataset.pointer;
+};
+
+const setCurNavMobile = (current, next) => {
+    current.classList.remove('navigation_button-current');
+    next.classList.add('navigation_button-current');
 };
 
 const closeMobileMenu = () => {
@@ -19,17 +24,29 @@ const closeMobileMenu = () => {
 
 $(window).scroll( () => {
     if(($(window).scrollTop() + $(window).height()) > ($(document).height() - $('#contact').height() * 2)){
-        setNav(navBottom, anchorContact);
-        setNav(navTopLeft, anchorWelcome);
-        setNav(navTopRight, anchorProjects);
+        setCurNavDesktop(navBottom, anchorContact);
+        setCurNavDesktop(navTopLeft, anchorWelcome);
+        setCurNavDesktop(navTopRight, anchorProjects);
+
+        if(document.getElementsByClassName('navigation_button-current')[0] !== document.getElementById('mobile_menu-contact')) {
+            setCurNavMobile(document.getElementsByClassName('navigation_button-current')[0], document.getElementById('mobile_menu-contact'));
+        }
     } else if($(window).scrollTop() < ($('#welcome').offset().top * 2)) {
-        setNav(navBottom, anchorWelcome);
-        setNav(navTopLeft, anchorProjects);
-        setNav(navTopRight, anchorContact);
+        setCurNavDesktop(navBottom, anchorWelcome);
+        setCurNavDesktop(navTopLeft, anchorProjects);
+        setCurNavDesktop(navTopRight, anchorContact);
+
+        if(document.getElementsByClassName('navigation_button-current')[0] !== document.getElementById('mobile_menu-welcome')) {
+            setCurNavMobile(document.getElementsByClassName('navigation_button-current')[0], document.getElementById('mobile_menu-welcome'));
+        }
     } else {
-        setNav(navBottom, anchorProjects);
-        setNav(navTopLeft, anchorContact);
-        setNav(navTopRight, anchorWelcome);
+        setCurNavDesktop(navBottom, anchorProjects);
+        setCurNavDesktop(navTopLeft, anchorContact);
+        setCurNavDesktop(navTopRight, anchorWelcome);
+
+        if(document.getElementsByClassName('navigation_button-current')[0] !== document.getElementById('mobile_menu-projects')) {
+            setCurNavMobile(document.getElementsByClassName('navigation_button-current')[0], document.getElementById('mobile_menu-projects'));
+        }
     }
 });
 
