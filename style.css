@@ -312,11 +312,17 @@ body {
     }
     .top_nav ol {
         justify-content: left;
+        gap: 40%;
     }
     .site_footer a {
         visibility: hidden;
     }
     .contact_link {
         font-size: 2em;
+    }
+}
+@media screen and (max-width: 530px) {
+    .top_nav ol {
+        gap: 15%;
     }
 }
