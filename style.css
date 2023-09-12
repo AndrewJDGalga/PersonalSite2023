@@ -264,15 +264,14 @@ body {
 }
 
 #mobile_menu-button {
-    clip-path: polygon(0 0, 0 100%, 100% 50%);
-    background-color: var(--light-green);
+    background-color: rgba(0,0,0,0);
+    border: none;
     width: 4em;
     height: 4em;
 }
-#mobile_menu-button:hover {
-    background-color: var(--red-brown);
+#mobile_menu-menu {
+    display: none;
 }
-
 .mobile_menu {
     display: none;
     position: relative;
@@ -289,8 +288,14 @@ body {
     padding: 16px;
     margin-left: 0;
 }
-#mobile_menu-menu {
-    display: none;
+.mobile_menu-icon {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    background-color: var(--light-green);
+}
+.mobile_menu-icon:hover {
+    background-color: var(--red-brown);
 }
 
 @media screen and (max-width: 740px), screen and (orientation: portrait)
