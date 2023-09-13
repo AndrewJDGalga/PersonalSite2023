@@ -318,7 +318,7 @@ body {
         visibility: hidden;
     }
     .contact_link {
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 530px) {
