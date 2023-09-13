@@ -11,125 +11,128 @@
     <body>
         <div class="fixed bg_image"></div>
         <div class="fixed triback"></div>
-        <header class="sticky site_head grey_back">
-            <nav class="top_nav">
-                <ol class="width_constrained blue_backing">
-                    <li>
-                        <a id="top_left" class="navigation_button shadow_left" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <div class="logo">
-                            <a href="#welcome">
-                                <h1>Andrew Jonhardt</h1>
-                                <p>Front-end web deverloper</p>
-                            </a>
+        <div class="grey_back">
+            <header class="sticky site_head">
+                <nav class="top_nav">
+                    <ol class="width_constrained blue_backing">
+                        <li>
+                            <a id="top_left" class="navigation_button shadow_left" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <div class="logo">
+                                <a href="#welcome">
+                                    <h1>Andrew Jonhardt</h1>
+                                    <p>Front-end web deverloper</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a id="top_right" class="navigation_button shadow_right" href="#contact">Contact</a>
+                        </li>
+                        <li class="mobile_menu">
+                            <button id="mobile_menu-button">
+                                <div class="mobile_menu-icon"></div>
+                            </button>
+                            <ul id="mobile_menu-menu">
+                                <li>
+                                    <a id="mobile_menu-welcome" class="navigation_button navigation_button-current" href="#welcome">Welcome</a>
+                                </li>
+                                <li>
+                                    <a id="mobile_menu-projects" class="navigation_button" href="#projects">Projects</a>
+                                </li>
+                                <li>
+                                    <a id="mobile_menu-contact" class="navigation_button shadow_right" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+            <main class="content">
+                <div class="width_constrained">
+                    <div id="welcome" data-name="Welcome" data-pointer="#welcome"></div>
+                    <article class="welcome center_text">
+                        <img class="greet_photo" src="./art/daniele-franchi-oHNctAHA15c-unsplash.webp" alt="A brown calf peeks between gnarled tree roots.">
+                        <h2>Hello!</h2>
+                        <p>
+                            My name is Andrew, I'm a front-end web developer, and I'd like to help you with your next project.
+                        </p>
+                        <p>
+                            Want to know how I might help? Take a look at my projects. Got questions or just want to get in touch? Shoot me an <a class="embedded_link" href="mailto:contact@andrewjonhardt.com">email!</a>
+                        </p>
+                    </article>
+                    <div id="projects" data-name="Projects" data-pointer="#projects"></div>
+                    <article class="projects">
+                        <section class="project">
+                            <h2>Projects</h2>
+                            <img class="project-photo" src="./art/atxgd.webp" alt="header of the atx game designers site">
+                            <h3>ATX Game Designers</h3>
+                            <p>
+                                Website completed for the Austin, Texas based board game design group ATX Game Designers for the final Practicum portion of my Austin Community College Web Development coursework. ATX Game Designers asked me to make a static site in Wordpress on a server they control. I had almost no experience with PHP or Wordpress at that point. I created a Classic-style theme and added site content directly in Wordpress.
+                            </p>
+                            <p>
+                                In order to complete my course, I was later asked to rebuild the front and game gallery pages from scratch using HTML, Vanilla JS, and CSS. I completed the rebuild of these pages, including the creation of a custom image carousel, in 10 days. 
+                            </p>
+                            <ul class="project_links">
+                                <li>
+                                    <a class="embedded_link" href="http://atxgamedesigners.com/">Live website</a>
+                                </li>
+                                <li>
+                                    <a class="embedded_link" href="./atxgamedesigners/index.html">My hosted page</a>
+                                </li>
+                                <li>
+                                    <a class="embedded_link" href="https://github.com/AndrewJDGalga/ACCPracticumPart2">Check out the non-Wordpress code on Github</a>
+                                </li>
+                                <li>
+                                    <a class="embedded_link" href="https://github.com/AndrewJDGalga/ATXGDThemePublic">See the Wordpress Theme on Github</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="project">
+                            <img class="project-photo" src="./art/css-final.webp" alt="header for a fake Austin Godot Engine deverlopers fan group.">
+                            <h3>Fictional Austin Godot Engine group site</h3>
+                            <p>
+                                As part of my CSS coursework, I created a website for a fictional fake Austin Godot Engine deverlopers fan group. The site includes home, about, membership enrollment, and contact pages.
+                            </p>
+                            <ul class="project_links">
+                                <li>
+                                    <a class="embedded_link" href="./godot-group/index.html">My hosted page</a>
+                                </li>
+                                <li>
+                                    <a class="embedded_link" href="https://github.com/AndrewJDGalga/ACC-HTML_CSS_final">See the code on Github</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="project">
+                            <img class="project-photo" src="./art/jquery-mars.webp" alt="header for a one page site on Mars.">
+                            <h3>jQuery Mars page</h3>
+                            <p>
+                                An Austin Community College 1 page project on Mars intended to reflect an understanding of jQuery.
+                            </p>
+                            <ul class="project_links">
+                                <li>
+                                    <a class="embedded_link" href="./mars/acc-mars.html">My hosted page</a>
+                                </li>
+                                <li>
+                                    <a class="embedded_link" href="https://github.com/AndrewJDGalga/acc-mars-project">See the code on Github</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                    <div id="contact" data-name="Contact" data-pointer="#contact"></div>
+                    <article class="contact center_text">
+                        <h2>Reach out</h2>
+                        <p>I'm looking for projects!</p>
+                        <div class="contact-email">
+                            <a class="contact_link" href="mailto:contact@andrewjonhardt.com">Contact@AndrewJonhardt.com</a>
                         </div>
-                    </li>
-                    <li>
-                        <a id="top_right" class="navigation_button shadow_right" href="#contact">Contact</a>
-                    </li>
-                    <li class="mobile_menu">
-                        <button id="mobile_menu-button">
-                            <div class="mobile_menu-icon"></div>
-                        </button>
-                        <ul id="mobile_menu-menu">
-                            <li>
-                                <a id="mobile_menu-welcome" class="navigation_button navigation_button-current" href="#welcome">Welcome</a>
-                            </li>
-                            <li>
-                                <a id="mobile_menu-projects" class="navigation_button" href="#projects">Projects</a>
-                            </li>
-                            <li>
-                                <a id="mobile_menu-contact" class="navigation_button shadow_right" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-            </nav>
-        </header>
-        <main class="content grey_back">
-            <div class="width_constrained">
-                <div id="welcome" data-name="Welcome" data-pointer="#welcome"></div>
-                <article class="welcome center_text">
-                    <h2>Welcome to my site!</h2>
-                    <p>
-                        I'm a full time front-end web developer and part time game designer currently located in Austin, Texas. 
-                    </p>
-                    <p>
-                        Check out my projects or let me know how I can help with yours!
-                    </p>
-                </article>
-                <div id="projects" data-name="Projects" data-pointer="#projects"></div>
-                <article class="projects">
-                    <section class="project">
-                        <h2>Projects</h2>
-                        <img class="project-photo" src="./art/atxgd.webp" alt="header of the atx game designers site">
-                        <h3>ATX Game Designers</h3>
-                        <p>
-                            Website completed for the Austin, Texas based board game design group ATX Game Designers for the final Practicum portion of my Austin Community College Web Development coursework. ATX Game Designers asked me to make a static site in Wordpress on a server they control. I had almost no experience with PHP or Wordpress at that point. I created a Classic-style theme and added site content directly in Wordpress.
-                        </p>
-                        <p>
-                            In order to complete my course, I was later asked to rebuild the front and game gallery pages from scratch using HTML, Vanilla JS, and CSS. I completed the rebuild of these pages, including the creation of a custom image carousel, in 10 days. 
-                        </p>
-                        <ul class="project_links">
-                            <li>
-                                <a class="embedded_link" href="http://atxgamedesigners.com/">Live website</a>
-                            </li>
-                            <li>
-                                <a class="embedded_link" href="./atxgamedesigners/index.html">My hosted page</a>
-                            </li>
-                            <li>
-                                <a class="embedded_link" href="https://github.com/AndrewJDGalga/ACCPracticumPart2">Check out the non-Wordpress code on Github</a>
-                            </li>
-                            <li>
-                                <a class="embedded_link" href="https://github.com/AndrewJDGalga/ATXGDThemePublic">See the Wordpress Theme on Github</a>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="project">
-                        <img class="project-photo" src="./art/css-final.webp" alt="header for a fake Austin Godot Engine deverlopers fan group.">
-                        <h3>Fictional Austin Godot Engine group site</h3>
-                        <p>
-                            As part of my CSS coursework, I created a website for a fictional fake Austin Godot Engine deverlopers fan group. The site includes home, about, membership enrollment, and contact pages.
-                        </p>
-                        <ul class="project_links">
-                            <li>
-                                <a class="embedded_link" href="./godot-group/index.html">My hosted page</a>
-                            </li>
-                            <li>
-                                <a class="embedded_link" href="https://github.com/AndrewJDGalga/ACC-HTML_CSS_final">See the code on Github</a>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="project">
-                        <img class="project-photo" src="./art/jquery-mars.webp" alt="header for a one page site on Mars.">
-                        <h3>jQuery Mars page</h3>
-                        <p>
-                            An Austin Community College 1 page project on Mars intended to reflect an understanding of jQuery.
-                        </p>
-                        <ul class="project_links">
-                            <li>
-                                <a class="embedded_link" href="./mars/acc-mars.html">My hosted page</a>
-                            </li>
-                            <li>
-                                <a class="embedded_link" href="https://github.com/AndrewJDGalga/acc-mars-project">See the code on Github</a>
-                            </li>
-                        </ul>
-                    </section>
-                </article>
-                <div id="contact" data-name="Contact" data-pointer="#contact"></div>
-                <article class="contact center_text">
-                    <h2>Reach out</h2>
-                    <p>I'm looking for projects!</p>
-                    <div class="contact-email">
-                        <a class="contact_link" href="mailto:contact@andrewjonhardt.com">Contact@AndrewJonhardt.com</a>
-                    </div>
-                </article>
-            </div>
-        </main>
-        <footer class="sticky site_footer blue_backing center_text">
-            <a id="bottom" class="navigation_button shadow_down navigation_button-current" href="#welcome">Welcome</a>
-        </footer>
+                    </article>
+                </div>
+            </main>
+            <footer class="sticky site_footer blue_backing center_text">
+                <a id="bottom" class="navigation_button shadow_down navigation_button-current" href="#welcome">Welcome</a>
+            </footer>
+        </div>
     </body>
     <!--Site creatred by Andrew Jonhardt and not for redistribution. Background image by Sebastiano Piazzi via Unsplash (https://unsplash.com/photos/1ITnDvrDfbI)-->
 </html>

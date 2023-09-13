@@ -2,7 +2,7 @@
     --logo-pink: #F8D1F3; /*mainly logo*/
     --red-brown-black: #271D16; /*mainly body text*/
     --grey-green: #A4ABA1; /*accent*/
-    --grey-opacity: rgba(255,255,255,0.4);
+    --grey-opacity: rgba(255,255,255,0.6);
     --light-green: #9DC9A6; /*button main*/
     --dark-green: #2D362B; /*buttons, accent*/
     --grey-tri-blue: #667688; /*used by tri*/
@@ -89,6 +89,7 @@ body {
 .site_head {
     width: 100%;
     top: 0;
+    z-index: 5;
 }
 
 .logo {
@@ -104,7 +105,6 @@ body {
 .top_nav {
     width: 100%;
     margin-top: 0;
-    z-index: -2;
 }
 
 .top_nav ol {
@@ -151,7 +151,6 @@ body {
 .blue_backing {
     background-color: var(--grey-tri-blue);
 }
-
 .grey_back {
     background-color: var(--grey-opacity);
     z-index: 5;
@@ -159,6 +158,15 @@ body {
 
 .content {
     padding-bottom: 3em;
+}
+
+.greet_photo {
+    width: 20%;
+    min-width: 128px;
+    height: auto;
+    clip-path: circle(40% at center);
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .welcome h2 {
