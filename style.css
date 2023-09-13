@@ -327,6 +327,18 @@ body {
     }
     .contact_link {
         font-size: 1em;
+        text-shadow: 
+        -1px -1px 0 var(--highlight-blue),
+        1px -1px 0 var(--highlight-blue),
+        -1px 1px 0 var(--highlight-blue),
+        1px 1px 0 var(--highlight-blue);
+    }
+    .contact_link:hover {
+        text-shadow: 
+        -1px -1px 0 var(--logo-pink),
+        1px -1px 0 var(--logo-pink),
+        -1px 1px 0 var(--logo-pink),
+        1px 1px 0 var(--logo-pink);
     }
 }
 @media screen and (max-width: 530px) {
