@@ -46,6 +46,9 @@ html {
 body {
     font-family: "DejavuSans", Arial, Helvetica, sans-serif;
     height: fit-content;
+    color: whitesmoke;
+    font-size: large;
+    background-color: black;
 }
 .width_constrained {
     width: 90%;
@@ -78,12 +81,12 @@ body {
 .bg_image {
     width: 100%;
     height: 100%;
-    background-image: url('./art/sebastiano-piazzi-unspalsh-stairs.webp');
+    background-image: url('./art/mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
     z-index: -4;
-    filter: blur(5px);
+    filter: blur(1px);
 }
 
 .site_head {
@@ -151,10 +154,6 @@ body {
 .blue_backing {
     background-color: var(--grey-tri-blue);
 }
-.grey_back {
-    background-color: var(--grey-opacity);
-    z-index: 5;
-}
 
 .content {
     padding-bottom: 3em;
@@ -210,8 +209,7 @@ body {
 .embedded_link {
     position: relative;
     text-decoration: none;
-    color: black;
-    font-style: italic;
+    color: inherit;
     padding: 3px;
     line-height: 1.8em;
 }
