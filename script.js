@@ -23,7 +23,7 @@ const closeMobileMenu = () => {
 }
 
 $(window).scroll( () => {
-    if(($(window).scrollTop() + $(window).height()) >= ($(document).height() - $('#contact').height() * 2)){
+    if( $(window).scrollTop() >= $(document).height() - $(window).height() - 100) {
         setCurNavDesktop(navBottom, anchorContact);
         setCurNavDesktop(navTopLeft, anchorWelcome);
         setCurNavDesktop(navTopRight, anchorProjects);

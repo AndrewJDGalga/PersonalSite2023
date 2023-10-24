@@ -85,8 +85,8 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
-    z-index: -4;
-    filter: blur(2px);
+    z-index: -2;
+    filter: blur(4px);
     overflow-x: hidden;
 }
 
