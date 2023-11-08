@@ -202,7 +202,8 @@ body {
 .project p {
     margin: 1em;
 }
-.project_links {
+.project_links,
+.welcome_links {
     list-style: none;
     display: flex;
     flex-direction: row;
