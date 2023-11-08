@@ -208,6 +208,7 @@ body {
     flex-direction: row;
     margin-bottom: 3em;
     gap: 6vw;
+    flex-wrap: wrap;
 }
 
 .embedded_link {
